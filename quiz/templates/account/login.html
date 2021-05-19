@@ -1,0 +1,86 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/line-awesome.min.css' %}">
+
+    <!-- Custom Css --> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css2/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css2/theme-1.css' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images2/favicon.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'images2/apple-touch-icon.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images2/icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images2/icon-114x114.png' %}">
+
+
+  </head>
+  <body>
+
+
+    <div class="ugf-main-wrap ugf-bg">
+      <div class="ugf-header">
+        <div class="logo">
+          <a href="#"><img src="images/logo-dark.png" class="img-fluid" alt=""></a>
+        </div>
+        <div class="alternet-access">
+          <p>Don't have an account? <a href="register.html">contact</a></p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="ugf-container pt200">
+              <div class="content-wrap">
+                <div class="ugf-form-block-header">
+                  <h1>Welcome Back!</h1>
+                  <p>Enter your email address and password to <br> get access your account</p>
+                </div>
+                <div class="ugf-input-block">
+                  <form action="{% url 'login' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="username" placeholder="username">
+                    </div>
+                    <div class="form-group pass-block">
+                      <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn">Login Account</button>
+                    <a href="forget.html" class="forget-pass">Forget Password?</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'demo1/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'demo1/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'demo1/assets/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'demo1/js/custom.js' %}"></script>
+  </body>
+
+
+</html>
