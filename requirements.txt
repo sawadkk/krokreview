@@ -2,3 +2,4 @@ django
 gunicorn
 django-heroku
 six
+django-model-utils
