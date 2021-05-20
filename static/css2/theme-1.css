@@ -417,7 +417,7 @@
   top: 1px;
   right: 21px;
   border-radius: 50%;
-  content: url("../images/check-white.svg");
+  content: url("../images2/check-white.svg");
 }
 
 .ugf-input-block form.package-form .form-group .features {
@@ -502,11 +502,11 @@
 }
 
 .ugf-input-block form.package-form .form-group .features .feature-list ul li.checked:before {
-  content: url(../images/check-green.svg);
+  content: url(../images2/check-green.svg);
 }
 
 .ugf-input-block form.package-form .form-group .features .feature-list ul li:before {
-  content: url(../images/check-grey.svg);
+  content: url(../images2/check-grey.svg);
   top: 3px;
   left: 0;
   position: absolute;
