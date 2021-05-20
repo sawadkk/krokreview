@@ -4,3 +4,4 @@ django-heroku
 six
 django-model-utils
 Pillow
+whitenoise
